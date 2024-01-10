@@ -1,0 +1,14 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "SecretKey": "secret-key-should-be-16-characters-minimum",
+  "ConnectionStrings": {
+    "ArtistContext": "Server=${replace_with_server_name};Port=${replace_with_port_number};Database=ArtistAwards;User Id=${replace_with_user_id};Password=${replace_with_password};"
+  }
+}

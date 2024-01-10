@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Test API</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Artist Awards</h1>
+    <h2>Vote for your favourite artist</h2>
+  </header>
+  <main>
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div id="artistsContainer">
+
+    </div>
+
+    <div id="clearButtonDiv">
+      <p>
+        This "Clear Local Storage" button is left here intentionally. This project is single-use by nature, so this way you can vote again/view things in more detail without any hassle.
+      </p>
+    </div>
+    <button id="clearButton" onclick="clearStorage()">Clear Local Storage</button>
+  </main>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

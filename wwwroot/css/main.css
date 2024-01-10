@@ -1,0 +1,80 @@
+﻿@import url("loading-animation.css");
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: Arial;
+}
+
+.artist-div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+  .artist-div span {
+    margin-bottom: 10px;
+  }
+
+#artistsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 50px;
+}
+
+#clearButton {
+  width: 20%;
+  padding: 15px 5px;
+  background-color: deeppink;
+  border-radius: 5px;
+  border: 1px solid deeppink;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+#clearButtonDiv {
+  padding: 0px 20px;
+  margin-top: 75px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.vote-button {
+  width: 40%;
+  padding: 15px 5px;
+  background-color: #A4C4F6;
+  border-radius: 5px;
+  border: 1px solid #A4C4F6;
+  /*box-shadow: gray 1px 1px;*/
+}
+
+.voted-button {
+  background-color: #50FF8C;
+  border-color: #50FF8C;
+}
+
+@media(max-width: 700px) {
+  #artistsContainer {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media(max-width: 565px) {
+  #artistsContainer {
+    grid-template-columns: auto;
+  }
+
+  .artist-div {
+    align-items: center;
+  }
+
+  .vote-button {
+    width: 50%;
+  }
+}
